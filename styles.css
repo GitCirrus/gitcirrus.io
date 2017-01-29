@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+    background: url(img/page.png) repeat-y center;
+    min-width: 900px;
+}
+
+header {
+    padding: 20px 0px;
+    margin: 0 auto;
+    line-height: 30px;
+    max-width: 900px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 span {
+    font-size: 0.7em;
+    color: #005E82;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 75ms, border 200ms;
+    border-bottom: 2px solid transparent;
+    padding: 1px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid #005E82;
+}
+
+nav ul li.login {
+    padding: 0;
+}
+
+nav ul li.login a {
+    color: #fff;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.landing {
+    padding: 70px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.landing-left, .landing-right {
+    width: 420px;
+}
+
+.landing-left {
+    position: fixed;
+    height: 100%;
+    padding-right: 30px;
+}
+
+.landing-left .hero h2 {
+    font-weight: normal;
+    font-size: 2.3em;
+    margin: 0;
+    padding: 0 0 40px 0;
+}
+
+.landing-left .hero h3 {
+    font-weight: normal;
+    color: #666;
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+
+.landing-left .hero a.button {
+    color: #fff;
+    text-decoration: none;
+    background: #0984FF;
+    display: block;
+    width: 250px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    transition: background 100ms;
+}
+
+.landing-left .hero a.button:hover {
+    background: #005E82;
+}
+
+
+
+.landing-right {
+    padding-left: 30px;
+    float: right;
+    color: #fff;
+}
+
+.landing-right h2 {
+    font-weight: normal;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+footer {
+    width: 900px;
+    color: #999999;
+    position: absolute;
+    font-size: 0.9em;
+    bottom: 170px; /* Height of .landing (+ padding) */
+}
+
+footer p {
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+footer .right {
+    float: right;
+    color: #ccc;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+footer ul li.first {
+    margin: 0;
+}
+
+footer ul li a {
+    color: #0984FF;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border 200ms;
+}
+
+footer ul li a:hover {
+    border-bottom: 1px solid #aaa;
+}

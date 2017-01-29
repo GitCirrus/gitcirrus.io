@@ -1,2 +1,2 @@
 # gitcirrus.io
-The source code for gitcirrus.io
+The source code for the gitcirrus.io website

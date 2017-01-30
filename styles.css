@@ -1,19 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+::selection {
+    background: #4c4c4c;
+    color: #fff;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
     margin: 0;
     padding: 0;
-    background: url(img/page.png) repeat-y center;
     min-width: 900px;
+}
+
+body.landing-home {
+    background: url(img/page.png) repeat-y center;
 }
 
 header {
     padding: 20px 0px;
     margin: 0 auto;
     line-height: 30px;
-    max-width: 900px;
+    width: 900px;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 header h1 {
@@ -71,9 +82,22 @@ nav ul li.login a {
 }
 
 .landing {
-    padding: 70px;
+    padding: 140px 0 70px 0;
     margin: 0 auto;
-    max-width: 900px;
+    width: 900px;
+}
+
+.icon-how {
+    padding: 0 14px 0 0;
+}
+.icon-features {
+    padding: 0 17px 0 3px;
+}
+.icon-pricing {
+    padding: 0 13px 0 1px;
+}
+.icon-airplane {
+    padding-left: 5px;
 }
 
 .landing-left, .landing-right {
@@ -90,7 +114,7 @@ nav ul li.login a {
     font-weight: normal;
     font-size: 2.3em;
     margin: 0;
-    padding: 0 0 40px 0;
+    padding: 0 0 30px 0;
 }
 
 .landing-left .hero h3 {
@@ -116,6 +140,17 @@ nav ul li.login a {
     background: #005E82;
 }
 
+.landing-left .hero .box {
+    width: 250px;
+    /*margin: 0 auto;*/
+    text-align: center;
+}
+
+.landing-left .hero .extra {
+    color: #666;
+    font-size: 0.85em;
+}
+
 
 
 .landing-right {
@@ -129,6 +164,69 @@ nav ul li.login a {
     font-size: 2em;
     margin: 0;
     padding: 0;
+}
+
+.landing-right .vertical-spacer {
+    display: block;
+    margin: 250px 0;
+}
+
+.landing-right .vertical-spacer-small {
+    display: block;
+    margin: 50px 0;
+}
+
+.landing-right table.features {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.landing-right table.features tr td {
+    width: 50%;
+    vertical-align: top;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.landing-right table.features h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.landing-right table.features h3 .icon-feature {
+    display: inline-block;
+    width: 20px;
+    font-size: 1.6em;
+    text-align: center;
+    padding-right: 10px;
+
+}
+
+.landing-right table.features .description {
+    margin-left: 33px;
+}
+
+.landing-right table.features .description a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.landing-right table.features .description a:hover {
+    text-decoration: underline;
+}
+
+.landing-right .pricing {
+    font-weight: normal;
+}
+
+.landing-right .pricing span {
+    font-size: 2em;
 }
 
 

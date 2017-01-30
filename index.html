@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Create a dynamic website from a Git repository | Git Cirrus</title>
+    <title>Create a dynamic website from a Git repository | GitCirrus.io</title>
 
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
@@ -11,51 +11,219 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body class="landing-home">
     <header>
         <nav>
             <ul>
                 <li><a href="./about">About</a></li>
+                <li><a href="./blog">Blog</a></li>
                 <li><a href="./contact">Contact</a></li>
-                <li><a href="./join">Sign Up</a></li>
                 <li class="login"><a href="https://admin.gitcirrus.io">Admin Area</a></li>
             </ul>
         </nav>
         <h1><a href="./">GitCirrus<span>.io</span></a></h1>
     </header>
 
-
     <div class="landing">
-
         <!-- Scrollable right section -->
         <div class="landing-right">
+            <h2><i class="icon icon-features ion-clipboard"></i>What's included?</h2>
 
-            <h2>todo</h2>
+            <table class="features">
+                <tr>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-paper-airplane"></i>
+                            </div>
+                            Fast &amp; Easy Setup
+                        </h3>
+                        <div class="description">
+                            Get a website up and running in minutes
+                        </div>
+                    </td>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-location"></i>
+                            </div>
+                            Custom Domains
+                        </h3>
+                        <div class="description">
+                            Use your own custom domain (eg. mysite.com)
+                        </div>
+                    </td>
+                </tr>
 
-            <p>Information about:
+                <tr>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-locked"></i>
+                            </div>
+                            SSL Certificates
+                        </h3>
+                        <div class="description">
+                            Add a free SSL certificate with a single click<br />
+                            <small>powered by <a href="#">Let's Encrypt</a></small>
+                        </div>
+                    </td>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-ios-email-outline"></i>
+                            </div>
+                            Email Forwarding
+                        </h3>
+                        <div class="description">
+                            Forward emails from your domain to another address
+                        </div>
+                    </td>
+                </tr>
 
-                <ul>
-                    <li>Why you need it (speed, security, easy)</li>
-                    <li>How it works (add domain or subdomain, set up git repo, done!)</li>
-                    <li>Extra features (auto-pull, sql databases, custom error pages, branch selection, auto-ssl with let's encrypt, custom domains, traffic stats, error log streaming, email forwarding)</li>
-                    <li>Supported server-side tech (PHP, Ruby, Node, etc) + version of server (eg. php 5.3 vs 5.6)</li>
-                </ul>
+                <tr>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-pull-request"></i>
+                            </div>
+                            Auto-pull changes
+                        </h3>
+                        <div class="description">
+                            Automatically deploy new commits to your repo
+                        </div>
+                    </td>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-folder"></i>
+                            </div>
+                            Branch selection
+                        </h3>
+                        <div class="description">
+                            Set the website root to a specific branch or commit
+                        </div>
+                    </td>
+                </tr>
 
-            </p>
+                <tr>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-alert-circled"></i>
+                            </div>
+                            Custom Error Pages
+                        </h3>
+                        <div class="description">
+                            Easily add custom pages for 4xx or 5xx errors
+                        </div>
+                    </td>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-printer"></i>
+                            </div>
+                            Error log streaming
+                        </h3>
+                        <div class="description">
+                            Tail, filter and search your error logs in real-time
+                        </div>
+                    </td>
+                </tr>
 
-            <p>One free site per account, then $7/month for personal, $25/month for business</p>
+                <tr>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-stats-bars"></i>
+                            </div>
+                            Live Traffic Stats
+                        </h3>
+                        <div class="description">
+                            Monitor the traffic to your website in real-time
+                        </div>
+                    </td>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-soup-can-outline"></i>
+                            </div>
+                            MySQL Databases
+                        </h3>
+                        <div class="description">
+                            Attach MySQL databases to your website to store data
+                        </div>
+                    </td>
+                </tr>
 
-            <p>Exact features/account limits to be worked out (unlimited sites, but limited bandwidth/storage ?)</p>
+                <tr>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-code"></i>
+                            </div>
+                            Choose Server Software
+                        </h3>
+                        <div class="description">
+                            Select the server software and version that you want (PHP, NodeJS or Ruby)
+                        </div>
+                    </td>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-arrow-graph-up-right"></i>
+                            </div>
+                            Fault-Tolerance
+                        </h3>
+                        <div class="description">
+                            Our Docker infrastructure seamlessly handles server failures to preserve <a href="https://status.gitcirrus.io">uptime</a>
+                        </div>
+                    </td>
+                </tr>
 
+                <tr>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-medkit"></i>
+                            </div>
+                            Support That Cares
+                        </h3>
+                        <div class="description">
+                            Contact a real person (that's Joe) for help via email or live chat
+                        </div>
+                    </td>
+                    <td>
+                        <h3>
+                            <div class="icon-feature">
+                                <i class="icon ion-plus"></i>
+                            </div>
+                            Much, much more...
+                        </h3>
+                        <div class="description">
+                            We are constantly tweaking and improving GitCirrus; stay tuned!
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="vertical-spacer-small"></div>
         </div>
 
         <!-- Fixed left section -->
         <div class="landing-left">
-
             <div class="hero">
                 <h2>Create a dynamic website from a Git repository</h2>
-                <h3>When serving static files from GitHub just won't cut it</h3>
-                <a href="./join" class="button">Get started for free</a>
+
+                <h3>Easy to use, reliable and feature-rich web hosting for developers using Git to build websites</h3>
+
+                <div class="box">
+                    <a href="./join" class="button">
+                        Add your first site for free
+                        <i class="icon icon-airplane ion-paper-airplane"></i>
+                    </a>
+                    <p class="extra">Unlimited websites from <strong>$7</strong>/month</p>
+                </div>
             </div>
 
             <footer>
@@ -66,17 +234,14 @@
                     <li><a href="./about">About</a></li>
                     <li><a href="./blog">Blog</a></li>
                     <li><a href="./contact">Contact</a></li>
+                    <!--<li><a href="./api">API</a></li>-->
                     <li><a href="https://status.gitcirrus.io">Status</a></li>
                 </ul>
 
                 <p>GitCirrus is a trading name of JCKD (UK) Ltd.</p>
                 <p>Cloud Code icon by IconDots from the Noun Project.</p>
-            </footer> <!-- class="right" -->
+            </footer>
         </div>
-
     </div>
-
-
-
 </body>
 </html>

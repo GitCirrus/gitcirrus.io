@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About | GitCirrus.io</title>
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body class="regular-content">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./about">About</a></li>
+                <li><a href="./blog">Blog</a></li>
+                <li><a href="./contact">Contact</a></li>
+                <li class="login"><a href="https://admin.gitcirrus.io">Sign In</a></li>
+                <li class="join-btn">
+                    <a href="./join">Get Started <i class="icon ion-paper-airplane"></i>&nbsp;</a>
+                </li>
+            </ul>
+        </nav>
+        <h1><a href="./">GitCirrus<span>.io</span></a></h1>
+    </header>
+
+    <div class="main">
+
+        <div class="about">
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>Who is behind this?</h3>
+            <p>Hi, I'm <a href="https://nevadascout.com" target="blank">Joe Cotton</a>. I've been working with the web for nearly 10 years now, in all areas from design to development to systems administration. I started GitCirrus in January 2017 to make my life easier.</p>
+
+            <h3>How does this make my life easier?</h3>
+            <p>Three reasons:</p>
+            <p>
+                <ol class="reasons">
+                    <li>It's <strong>super fast and simple to set up a new website</strong>. Just add your domain, give GitCirrus read access to the repository and we'll handle the rest.</li>
+                    <li>There's <strong>no management overhead</strong> required from you. We take care of everything from security patches to server updates.</li>
+                    <li>It has a <strong>powerful, feature-rich control panel</strong> that gives you the ability to customise each website deployment and also view traffic stats, configure email forwarding, stream the error logs and much, much more.</li>
+                </ol>
+            </p>
+
+            <h3>How much does it cost?</h3>
+            <p>You get one free website limited to to a maximum 50mb storage and 100mb bandwidth per month.</p>
+            <p>Upgrading to a Pro account for $7/month  allows you to create an unlimited number of websites, however you are limited to one "data pack" which is a storage limit of 50gb and 250gb bandwidth to use each month across all of your websites.</p>
+            <p>Each additional data pack that you purchase for $7 per month will give you an extra 50gb storage and 250gb bandwidth to use in that month.</p>
+            <p>For example, paying $28/month will give you 200gb storage and 1000gb of bandwith to use each month. In reality, you are unlikely to ever need to pay more than $7 per month.</p>
+
+            <h3>What languages/technologies do you support?</h3>
+            <p>Right now we only support PHP versions 5.3, 5.6, 7.0 and 7.1 on Apache 2.4.</p>
+            <p>In the near future we will be adding support for Hack, Ruby, NodeJS and Python.</p>
+            <p><strong>You can view all planned and upcoming features on the <a href="https://trello.com/b/LWF3XsPu/gitcirrus-roadmap">GitCirrus Roadmap</a>.</strong></p>
+
+            <h3>Do you provide databases?</h3>
+            <p>Not at the moment, but we plan to host MySQL in the near future. In the meantime you'll need to use a 3rd party database hosting solution such as AWS RDS or Compose MySQL (or even just a Digital Ocean VM running MySQL).</p>
+            <p><strong>You can view all planned and upcoming features on the <a href="https://trello.com/b/LWF3XsPu/gitcirrus-roadmap">GitCirrus Roadmap</a>.</strong></p>
+
+            <h3>Do you have an API?</h3>
+            <p>Not yet, but we're planning to launch one soon.</p>
+            <p><strong>You can view all planned and upcoming features on the <a href="https://trello.com/b/LWF3XsPu/gitcirrus-roadmap">GitCirrus Roadmap</a>.</strong></p>
+
+            <h3>Can I use a CDN with this?</h3>
+            <p>Yes! In fact, we recommend that you do use one as it will significantly reduce your monthly bandwith usage. <a href="https://www.cloudflare.com">Cloudflare</a> has an excellent (free) CDN that we have been using for years and can strongly recommend.</p>
+
+            <h3>Tell me about the infrastructure</h3>
+            <p>That's not technically a question, but here goes...</p>
+            <p>GitCirrus is powered by Docker. Each website that you create is launched in a separate container that gets deployed onto the "GitCirrus Grid"&mdash;a fault-tolerant Docker Swarm that runs on a cluster of networked virtual machines hosted by <a href="https://m.do.co/c/43f8cc07935f">Digital Ocean</a>. The infrastructure is largely autonomous and we make use of the Digital Ocean API to automatically spin up and destroy nodes as the overal cluster load varies without human intervention.</p>
+            <p>You can view the <a href="https://status.gitcirrus.io">GitCirrus Gird status page</a> to see what the current situation is&mdash;in real time.</p>
+
+            <h3>I have feedback &nbsp; / &nbsp; I want to report a problem!</h3>
+            <p>For super-urgent or critical issues please email <a href="mailto:hello@gitcirrus.io">hello@gitcirrus.io</a> or tweet <a href="https://twitter.com/GitCirrus">@GitCirrus</a> or <a href="https://twitter.com/nevada_scout">@nevada_scout</a>. I'll try to respond quickly, but occasionally I need to sleep.</p>
+            <p>If you've found a bug in the GitCirrus control panel or service, please <a href="https://github.com/GitCirrus/GitCirrus/issues">create an issue</a> on GitCirrus' public Github repository and I'll address it as soon as I can!</p>
+            <p></p>
+
+        </div>
+    </div>
+
+    <div class="signup-cta">
+        <div class="box">
+            <a href="./join" class="signup-button">
+                Add your first site for free
+                <i class="icon icon-airplane ion-paper-airplane"></i>
+            </a>
+            <p class="extra">Unlimited websites from <strong>$7</strong>/month</p>
+        </div>
+    </div>
+
+    <footer class="main">
+        <div class="container">
+            <div class="right">
+                <p>GitCirrus is a trading name of JCKD (UK) Ltd.</p>
+                <p>Cloud Code icon by IconDots from the Noun Project.</p>
+            </div>
+
+            <ul>
+                <li class="first"><a href="./terms">Terms</a></li>
+                <li><a href="./privacy">Privacy</a></li>
+                <li>&bull;</li>
+                <li><a href="./about">About</a></li>
+                <li><a href="./blog">Blog</a></li>
+                <li><a href="./contact">Contact</a></li>
+                <!--<li><a href="./api">API</a></li>-->
+                <li><a href="https://status.gitcirrus.io">Status</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

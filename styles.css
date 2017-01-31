@@ -17,6 +17,10 @@ body.landing-home {
     background: url(img/page.png) repeat-y center;
 }
 
+.regular-content header {
+    background: #fff;
+}
+
 header {
     padding: 20px 0px;
     margin: 0 auto;
@@ -72,13 +76,46 @@ nav ul li a:hover {
 }
 
 nav ul li.login {
-    padding: 0;
 }
 
 nav ul li.login a {
     color: #fff;
     margin-left: 10px;
     font-weight: bold;
+}
+
+nav ul li .icon {
+    padding-left: 6px;
+}
+
+nav ul li.join-btn {
+    padding-right: 0;
+}
+
+nav ul li.join-btn a {
+    color: #fff !important;
+    text-decoration: none;
+    background: #0984FF;
+    padding: 7px 14px 7px 20px;
+    border-radius: 3px;
+    transition: background 100ms;
+    border: none;
+}
+
+nav ul li.join-btn a:hover {
+    background: #005E82;
+    border: none;
+}
+
+
+.regular-content nav ul li a {
+    color: #666;
+}
+.regular-content nav ul li a:hover {
+    color: #202020;
+}
+.regular-content nav ul li.login a {
+    color: #000;
 }
 
 .landing {
@@ -122,33 +159,6 @@ nav ul li.login a {
     color: #666;
     margin: 0;
     padding: 0 0 50px 0;
-}
-
-.landing-left .hero a.button {
-    color: #fff;
-    text-decoration: none;
-    background: #0984FF;
-    display: block;
-    width: 250px;
-    padding: 15px 0;
-    text-align: center;
-    border-radius: 3px;
-    transition: background 100ms;
-}
-
-.landing-left .hero a.button:hover {
-    background: #005E82;
-}
-
-.landing-left .hero .box {
-    width: 250px;
-    /*margin: 0 auto;*/
-    text-align: center;
-}
-
-.landing-left .hero .extra {
-    color: #666;
-    font-size: 0.85em;
 }
 
 
@@ -229,24 +239,171 @@ nav ul li.login a {
     font-size: 2em;
 }
 
+a.signup-button {
+    color: #fff;
+    text-decoration: none;
+    background: #0984FF;
+    display: block;
+    width: 250px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    transition: background 100ms;
+}
 
+a.signup-button:hover {
+    background: #005E82;
+}
+
+
+
+.main {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.regular-content .signup-cta {
+    left: 0;
+    right: 0;
+    background: #eee;
+    padding: 70px 0 60px 0;
+    min-width: 900px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.regular-content .signup-cta.fixed {
+    position: absolute;
+    bottom: 100px;
+    margin-top: 0;
+}
+
+.regular-content .signup-cta .box {
+    margin: 0 auto;
+}
+
+.signup-cta .box {
+    width: 250px;
+    text-align: center;
+}
+
+.signup-cta .extra {
+    color: #666;
+    font-size: 0.85em;
+}
+
+
+.contact {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact h3 {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.contact h2 {
+    font-size: 5em;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.contact h2 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact p {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    color: #666;
+}
+
+
+.about {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+.about h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+.about p {
+    line-height: 1.7em;
+}
+
+.about a {
+    color: #0984FF;
+    text-decoration: none;
+}
+.about a:hover {
+    color: #0984FF;
+    text-decoration: underline;
+}
+
+.about .reasons {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.about .reasons li {
+    padding: 3px 3px 3px 10px;
+}
+
+
+footer.main {
+    width: 100%;
+    padding: 0;
+    bottom: none;
+}
+
+footer.main.fixed {
+    bottom: 0;
+}
+
+footer.main .container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+}
+
+footer.main .right {
+    float: right;
+    padding-bottom: 30px;
+    text-align: right;
+}
+
+.landing-home footer {
+    bottom: 170px; /* Height of .landing (+ padding) */
+}
 
 footer {
     width: 900px;
     color: #999999;
     position: absolute;
     font-size: 0.9em;
-    bottom: 170px; /* Height of .landing (+ padding) */
 }
 
 footer p {
     margin: 0;
     padding: 5px 0 0 0;
-}
-
-footer .right {
-    float: right;
-    color: #ccc;
 }
 
 footer ul {

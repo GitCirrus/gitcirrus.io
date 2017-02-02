@@ -4,6 +4,9 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blog(\/*)$ blog.php [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^join(\/*)$ join.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^blog/([^\.]+)$ blog.php?page=$1 [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f

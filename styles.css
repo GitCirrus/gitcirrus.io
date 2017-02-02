@@ -239,7 +239,7 @@ nav ul li.join-btn a:hover {
     font-size: 2em;
 }
 
-a.signup-button {
+a.signup-button, button.signup-button {
     color: #fff;
     text-decoration: none;
     background: #0984FF;
@@ -249,12 +249,66 @@ a.signup-button {
     text-align: center;
     border-radius: 3px;
     transition: background 100ms;
+    cursor: pointer;
 }
 
-a.signup-button:hover {
+button.signup-button {
+    font: inherit;
+    margin: 0 auto;
+    border: none;
+}
+
+a.signup-button:hover, button.signup-button:hover {
     background: #005E82;
 }
 
+.join-box {
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.join-success {
+    margin: 0;
+    padding: 0;
+    line-height: 3em;
+    padding-bottom: 5px;
+    padding-left: 40px;
+}
+
+.join-success .icon {
+    font-size: 2em;
+    margin-left: -40px;
+    margin-top: -2px;
+    position: absolute;
+}
+
+
+.join-box .header {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.signup-textbox {
+    font: inherit;
+    font-size: 2em;
+    width: 450px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ccc;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #ccc;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #ccc;
+}
 
 
 .main {

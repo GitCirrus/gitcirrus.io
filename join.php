@@ -17,6 +17,7 @@ $joinSuccess = false;
 if (isset($_POST["email"]) && !empty($_POST["email"])) {
     if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
         // TODO -- save email address to DB with IP and timestamp
+        // REMEMBER: this repo is public... don't store DB credentials here!
     }
 
     $joinSuccess = true;
@@ -112,5 +113,14 @@ if (isset($_POST["email"]) && !empty($_POST["email"])) {
             </ul>
         </div>
     </footer>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-91320922-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html>
